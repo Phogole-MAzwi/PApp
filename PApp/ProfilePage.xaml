@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PApp.ProfilePage"
+             BackgroundColor="White">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <!-- Profile Picture -->
+            <Image x:Name="profileImage"
+                   Source="mazwi.jpg"
+                   WidthRequest="100"
+                   HeightRequest="100"
+                   Aspect="AspectFill"
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Start" />
+
+            <!-- Name Entry -->
+            <Entry x:Name="nameEntry"
+                   Placeholder="Enter name"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   PlaceholderColor="DarkGray" />
+
+            <!-- Surname Entry -->
+            <Entry x:Name="surnameEntry"
+                   Placeholder="Enter Surname"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   PlaceholderColor="DarkGray" />
+
+            <!-- Email Entry -->
+            <Entry x:Name="emailEntry"
+                   Placeholder="Enter email"
+                   Keyboard="Email"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   PlaceholderColor="DarkGray" />
+
+            <!-- Bio Editor -->
+            <Editor x:Name="bioEditor"
+                    Placeholder="Enter Bio"
+                    HeightRequest="150"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    PlaceholderColor="DarkGray" />
+
+            <!-- Save Button -->
+            <Button Text="Save"
+                    Clicked="SaveButton_Clicked"
+                    FontSize="18"
+                    BackgroundColor="DodgerBlue"
+                    TextColor="White"
+                    CornerRadius="10"
+                    Padding="10" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
